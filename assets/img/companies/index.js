@@ -1,0 +1,16 @@
+export  {default as logo1} from './amazon.webp';
+export  {default as logo2} from './bethasda.png';
+export  {default as logo3} from './battle-net.webp'
+export  {default as logo4} from './gog.webp'
+export  {default as logo5} from './google-plays.webp'
+export  {default as logo6} from './itunes.webp'
+export  {default as logo7} from './microsoft.png'
+export  {default as logo8} from './nintendo.png'
+export  {default as logo9} from './origin.webp'
+export  {default as logo10} from './prepaid.webp'
+export  {default as logo11} from './ps.webp'
+export  {default as logo12} from './rockstar.webp'
+export  {default as logo13} from './steam-gift.png'
+export  {default as logo14} from './origin2.webp'
+export  {default as logo15} from './uplay.webp'
+export  {default as logo16} from './xbox.webp'

@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "layout/*" : ["./layout/*"],
+      "img/*" : ["./assets/img/*"],
+      "components/*": ["./components/*"],
+      "db/*" : ["./db/*"],
+      "globalStyle/*" : ["./globalStyle/*"],
+      "interfaces/*" : ["./interfaces/*"] 
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

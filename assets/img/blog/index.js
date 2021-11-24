@@ -1,0 +1,13 @@
+export  { default as img1} from  './blog-big-img1.webp'
+export  { default as img2} from  './blog-big-img2.webp'
+export  { default as img3} from  './blog-big-img3.webp'
+export  { default as img4} from  './blog-img3.jpg'
+export  { default as img5} from  './blog-img5.jpg' 
+export  { default as img6} from  './blog-img6.jpg' 
+export  { default as img7} from  './blog-img7.jpg' 
+export  { default as img8} from  './blog-img8.jpg'
+export  { default as img9} from  './blog-img9.jpg'
+export  { default as img10} from  './blog-img10.jpg'
+export  { default as img11} from  './blog-img11.jpg' 
+export  { default as img12} from  './blog-img12.jpg' 
+ 
