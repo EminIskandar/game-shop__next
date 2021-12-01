@@ -32,7 +32,7 @@ export const BottomArticle = styled.div`
         flex-direction: column;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
 `
 export const Info = styled.div`
 `
@@ -54,7 +54,7 @@ export const Article = styled.a`
             position: relative;  
             display :block ;
 
-            & ${Image} img{
+            & ${Img} img{
                 width: 100%;
             }
 
@@ -139,7 +139,7 @@ export const Article = styled.a`
                 width: 100%;
             }
 
-             & ${Image} img{
+             & ${Img} img{
                 width: 100%;
             } 
 

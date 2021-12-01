@@ -25,6 +25,7 @@ const Slider: NextPage  = ()=> {
         return () => {
             clearInterval(interval)
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]) 
 
     React.useEffect(() => { 
@@ -74,7 +75,7 @@ const Slider: NextPage  = ()=> {
                 sliderNav.current.children[count].classList.add('nav--active') 
             }
         }
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [count])
 
     const carousel = ( index : number) : void =>{ 

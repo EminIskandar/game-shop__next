@@ -49,7 +49,7 @@ export const Content = styled.div`
         text-align: center;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     width: 50%; 
     display: flex;
     justify-content: center;

@@ -8,6 +8,8 @@ import {
     Container, Content, Top, TopItems, Social, NavAndBtn, 
     Nav, Btn, Bottom, BottomItems, Text
 } from './styled'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Footer : NextPage = () => {
       
@@ -24,10 +26,10 @@ const Footer : NextPage = () => {
                     <TopItems>
                         <Social>
                             <div>
-                                <i className="fab fa-facebook-f"></i>
+                                <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
                             </div> 
                             <div>
-                                <i className="fab fa-instagram"></i>
+                                <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
                             </div>
                         </Social>
                         <NavAndBtn>

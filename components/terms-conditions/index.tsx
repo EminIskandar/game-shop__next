@@ -23,8 +23,8 @@ const Index:  NextPage = () => {
                     <h4>Terms &amp; Conditions</h4>
                 </div>
                     {
-                        data.split('.  ').map( (text) => {
-                            return <p>{text}</p>
+                        data.split('.  ').map( (text,index) => {
+                            return <p key={index}>{text}</p>
                         })
                     }
            </Content>

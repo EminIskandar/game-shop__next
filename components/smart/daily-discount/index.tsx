@@ -9,7 +9,7 @@ import img3 from 'img/game/daily-discount/image_daily_3.jpg'
 //styled 
 import {
     Section, Content, Title, Items, Item, 
-    Image, Info, Name, Price, Coupon, Btn
+    Img, Info, Name, Price, Coupon, Btn
 } from './styled'
 
 
@@ -22,12 +22,12 @@ const DailyDiscount : NextPage = () => (
                 </Title>
                 <Items>
                     <Item>
-                        <Image>
+                        <Img>
                             <img src={img1.src} alt="daily0"/>
-                        </Image>
+                        </Img>
                         <Info>
                             <Name>
-                                <h2> No Man's Sky </h2>
+                                <h2> No Man&apos;s Sky </h2>
                             </Name>
                             <Price>
                                 <p className="last-price">13.69 $</p>
@@ -50,9 +50,9 @@ const DailyDiscount : NextPage = () => (
                         </Info>
                     </Item> 
                     <Item>
-                        <Image>
+                        <Img>
                             <img src={img2.src} alt="daily1"/>
-                        </Image>
+                        </Img>
                         <Info>
                             <Name>
                                 <h2> Mount &amp; Blade II: Bannerlord EMEA/US </h2>
@@ -78,9 +78,9 @@ const DailyDiscount : NextPage = () => (
                         </Info>
                     </Item> 
                     <Item>
-                        <Image>
+                        <Img>
                             <img src={img3.src} alt="daily1"/>
-                        </Image>
+                        </Img>
                         <Info>
                             <Name>
                                 <h2> FIFA 21 </h2>

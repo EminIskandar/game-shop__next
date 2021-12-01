@@ -1,6 +1,6 @@
 import styled from 'styled-components' 
 
-export const Footer = styled.footer`
+export const Container = styled.footer`
     background-color: #252525;
     padding: 40px 0;
 `

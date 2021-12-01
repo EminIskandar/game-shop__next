@@ -29,7 +29,7 @@ const Recommendation: NextPage  = ()=> {
                         data.map( ( item , index : number) => { 
                             if(index <= 1 ){
                                 const image  = require(`img/game/info/${item.image}`)
-                                return <Link  href={item.path} key={item.name}>
+                                return <Link  href={item.path} key={item.name} passHref>
                                             <ItemLink theme={'theme1'}>
                                                 <ItemImage>
                                                     <Image src={image.default.src} alt=""/>
@@ -55,7 +55,7 @@ const Recommendation: NextPage  = ()=> {
                     data.map( ( item , index : number) => { 
                         if(index >= 2 ){
                             const image  = require(`img/Recommendation/${item.image}`)
-                            return  <Link href={item.path} key={item.name}>
+                            return  <Link href={item.path} key={item.name} passHref>
                                         <ItemLink theme={'theme2'}>
                                             <ItemImage>
                                                 <Image src={image.default.src} alt="recommendantion-1"/>

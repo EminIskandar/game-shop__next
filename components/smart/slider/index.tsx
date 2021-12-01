@@ -13,7 +13,7 @@ import img6 from 'img/slider/image_smart_slider_6.jpg'
 
 //styled
 import {
-    Section, Content, Title, SliderItem, ItemContent, Image,
+    Section, Content, Title, SliderItem, ItemContent, Img,
     Info, Name, PriceAndBuy, PriceAndCoupon, Price, Coupon,
     Btn, Icon, Nav, Navİtem, Arrows, ArrowsItem 
 } from './styled'
@@ -96,10 +96,10 @@ const Slider: NextPage = ()=> {
                 </Title>  
                 <SliderItem>
                     <ItemContent>
-                        <Image ref={sliderImg}>
+                        <Img ref={sliderImg}>
                             <img src={img1.src} alt="smart-slider-image1"/>
                             <img src={img2.src} alt="smart-slider-image2"/>
-                        </Image>
+                        </Img>
                         <Info>
                             <Name>
                                 <h2>Outriders EU PRE-ORDER</h2>

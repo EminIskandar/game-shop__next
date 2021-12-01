@@ -7,7 +7,7 @@ export const Main = styled.main`
 `
 export const Section = styled.section`
 `
-export const Image = styled.div`
+export const Img = styled.div`
 
     position: relative;
 

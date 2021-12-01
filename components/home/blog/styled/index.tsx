@@ -19,7 +19,7 @@ export const Header = styled.div`
         cursor: pointer;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     width: 47.5%;
     height: 150px; 
     position: relative;

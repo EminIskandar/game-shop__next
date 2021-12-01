@@ -64,16 +64,16 @@ const Header : NextPage = () => {
                         </ul>
                     </ToggleMenuIcon> 
                     <Nav> 
-                        <Link href="/blog">
+                        <Link href="/blog" passHref>
                             <NavLink  className={router.asPath == "/blog" ? "active" : ""} >Home</NavLink>
                          </Link> 
-                        <Link href="/blog/category/news" >
+                        <Link href="/blog/category/news" passHref>
                             <NavLink  className={router.asPath == "/blog/category/news" ? "active" : ""} >News</NavLink>
                         </Link> 
-                        <Link href="/blog/category/now-trending">
+                        <Link href="/blog/category/now-trending" passHref>
                             <NavLink  className={router.asPath == "/blog/category/now-trending" ? "active" : ""} >Now Trending</NavLink>
                         </Link> 
-                        <Link href="/blog/category/promosions"> 
+                        <Link href="/blog/category/promosions" passHref> 
                             <NavLink   className={router.asPath == "/blog/category/promosions" ? "active" : ""} >Promosions</NavLink>
                         </Link>    
                     </Nav>

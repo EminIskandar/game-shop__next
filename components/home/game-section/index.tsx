@@ -8,7 +8,7 @@ import database from 'db/db.json'
 //style 
 import {
     LineItem, Games, Content, Title, Slider, Items, NameAndBtn, Name, 
-    Btn, Image, Price, Platform, Item, Nav, NavLeftBtn, NavRightBtn
+    Btn, Img, Price, Platform, Item, Nav, NavLeftBtn, NavRightBtn
 } from './styled'
  
 const  GameSection: NextPage<GameSectionProp> = ({sectionName})=>{ 
@@ -108,11 +108,11 @@ const  GameSection: NextPage<GameSectionProp> = ({sectionName})=>{
                                 data.map((product, index) => {  
                                     const  image = require( `img/game/info/${product.coverImg}`)  
                                     if(index < 10 ){
-                                        return  <Link href={`/product/${product.path}`}  key={index}>
+                                        return  <Link href={`/product/${product.path}`}  key={index} passHref>
                                                     <Item ref={width}>
-                                                        <Image>
+                                                        <Img>
                                                             <img src={image.default.src} alt={`${sectionName}${index}`}/>
-                                                        </Image>
+                                                        </Img>
                                                         <NameAndBtn> 
                                                             <Name>
                                                                 <h3>{product.name}</h3>

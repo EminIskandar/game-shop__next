@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Layout from 'layout/result'
 import { NextPage } from 'next'
@@ -9,7 +10,7 @@ import database from 'db/db.json'
 //component
 import{ Result } from 'components'
 
-const Search: NextPage  = ()=> { 
+const Platform: NextPage  = ()=> { 
 
     const router = useRouter()
     const { platform } = router.query
@@ -17,6 +18,7 @@ const Search: NextPage  = ()=> {
 
     React.useEffect(() => {
         window.scrollTo(0, 0) 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     React.useEffect(() => {
@@ -28,6 +30,7 @@ const Search: NextPage  = ()=> {
                 setData(AllData)
             }  
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [platform])  
     
     return (
@@ -39,4 +42,5 @@ const Search: NextPage  = ()=> {
     )
 }
 
-export default Search
+ 
+export default Platform

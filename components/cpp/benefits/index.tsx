@@ -25,7 +25,7 @@ const Benefits: NextPage   = () => {
                     {
                         data.map((benefit)=>{
                             const image = require(`img/icon/${benefit.icon}`)
-                            return  <Item>
+                            return  <Item key={benefit.title}>
                                         <Icon>
                                             <img src={image.default.src} alt="icon3"/>
                                         </Icon>

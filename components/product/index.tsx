@@ -1,6 +1,7 @@
 import React from 'react' 
 import { ProductPageProps } from 'interfaces'
 import {NextPage} from 'next' 
+import Link from 'next/link'
 
 //img
 import logo from 'img/smart-logo.svg'
@@ -8,7 +9,7 @@ import logo from 'img/smart-logo.svg'
 //styled
 import {
     Main, BackgroundImage, Breadcrumbs, BreadcrumbsContent, BreadcrumbsItem,
-    Info, InfoContent, Gallery, Cover, OtherImage, Image, Description, ReviewAndBtn,
+    Info, InfoContent, Gallery, Cover, OtherImage, Img, Description, ReviewAndBtn,
     Review, Star, Btn, BtnShare, BtnWishlist, NameAndOther, Name, OtherInfo,
     OtherInfoItem, PriceAndBuyBtn, Price, PriceText, PriceIcon, DicountPrice, 
     DicountPriceText, CurrentPrice, BuyBtn, BuyBtnIcon, Affiliate, AffiliateIcon,
@@ -45,13 +46,19 @@ const Index : NextPage<ProductPageProps> = ({data}) => {
             <Breadcrumbs>
                 <BreadcrumbsContent>
                     <BreadcrumbsItem>
-                        <a href="/" data-testid="breadcumbs1">Home </a>
+                        <Link href="/" data-testid="breadcumbs1">
+                             <a>Home</a>
+                         </Link>
                     </BreadcrumbsItem>
                     <BreadcrumbsItem>
-                        <a href="/product" data-testid="breadcumbs2">/ Product</a>
+                        <Link href="/product" data-testid="breadcumbs2">
+                            <a>/ Product</a>
+                        </Link>
                     </BreadcrumbsItem>
                     <BreadcrumbsItem>
-                        <a href="/section" aria-hidden data-testid="breadcumbs3"> / { data[0].name} </a>
+                        <Link href="/section" aria-hidden data-testid="breadcumbs3"> 
+                            <a>/ { data[0].name}</a>
+                        </Link>
                     </BreadcrumbsItem>
                 </BreadcrumbsContent> 
             </Breadcrumbs>
@@ -62,21 +69,21 @@ const Index : NextPage<ProductPageProps> = ({data}) => {
                             <img  ref={coverImage} src={require( `img/game/info/${data[0].coverImg}`).default.src} alt=""/>
                         </Cover>
                         <OtherImage >
-                            <Image onClick={changeImage.bind(this,5)}>
+                            <Img onClick={changeImage.bind(this,5)}>
                                 <img src={require( `img/game/info/${data[0].coverImg}`).default.src} alt=""/>
-                            </Image>
-                            <Image onClick={changeImage.bind(this,0)}>
+                            </Img>
+                            <Img onClick={changeImage.bind(this,0)}>
                                 <img src={require( `img/game/info/${data[0].image[0]}`).default.src} alt=""/>
-                            </Image>
-                            <Image onClick={changeImage.bind(this,1)}>
+                            </Img>
+                            <Img onClick={changeImage.bind(this,1)}>
                                 <img src={require( `img/game/info/${data[0].image[1]}`).default.src} alt=""/>
-                            </Image>
-                            <Image onClick={changeImage.bind(this,2)}>
+                            </Img>
+                            <Img onClick={changeImage.bind(this,2)}>
                                 <img src={require( `img/game/info/${data[0].image[2]}`).default.src} alt=""/>
-                            </Image> 
-                            <Image onClick={changeImage.bind(this,3)}>
+                            </Img> 
+                            <Img onClick={changeImage.bind(this,3)}>
                                 <img src={require( `img/game/info/${data[0].image[3]}`).default.src} alt=""/>
-                            </Image>
+                            </Img>
                         </OtherImage>
                     </Gallery>
                     <Description>

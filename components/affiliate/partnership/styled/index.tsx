@@ -34,7 +34,7 @@ export const Content = styled.div`
         padding: 80px 20px;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     width: 35%;
     position: relative;
 

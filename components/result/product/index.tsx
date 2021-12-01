@@ -6,7 +6,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faBattleNet, faSteam, faXbox, } from '@fortawesome/free-brands-svg-icons'; 
  
 //styled
-import { Product, ImageAndName, Image, Name, Platform,
+import { Product, ImageAndName, Img, Name, Platform,
          Price, CurrentPrice, DiscountPrice, Discount,
         Present, Btn } from './styled' 
 
@@ -19,12 +19,12 @@ const Products : React.FC<ProductComponentProps> = ( {productData , align } ) =>
     return (
        <>
             <td>
-                <Link href={`/product/${data.path}`}>
+                <Link href={`/product/${data.path}`} passHref>
                     <Product  theme={align}>
                         <ImageAndName>
-                            <Image>
+                            <Img>
                                 <img src={image.default.src} alt={`image-${data.id}`}/>
-                            </Image>
+                            </Img>
                             <Name>
                                 <h3>{data.name}</h3>
                             </Name>

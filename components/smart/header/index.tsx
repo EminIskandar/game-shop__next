@@ -6,7 +6,7 @@ import logo from 'img/smart-logo.svg'
 
 //styled
 import { 
-    Section, Content, Image, Description, 
+    Section, Content, Img, Description, 
     Text, Title, TermCondition, Btn
 } from './styled'
 
@@ -14,9 +14,9 @@ const Header : NextPage = () => (
 
         <Section data-testid="header">
             <Content>
-                <Image>
+                <Img>
                     <img src={logo.src} alt=""/>
-                </Image>
+                </Img>
                 <Description>
                     <Title>
                         <h2>Best Deals, Certified!</h2>

@@ -5,16 +5,16 @@ import { NextPage } from 'next'
 import error404 from 'img/other/404-3.webp'
 
 //styled
-import { Section, Content, Image, Text } from './styled'
+import { Section, Content, Img, Text } from './styled'
 
 const Index : NextPage = () =>{
 
     return ( 
             <Section data-testid="error">
                  <Content>
-                     <Image>
+                     <Img>
                          <img src={error404.src} alt="error"/>
-                     </Image>
+                     </Img>
                      <Text>
                         <h3>HOUSTON, WE HAVE A PROBLEM!</h3>
                         <h2>We were unable to find what you were looking for.</h2>

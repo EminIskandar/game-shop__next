@@ -65,7 +65,7 @@ export const Item = styled.div`
         height: 400px; 
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     position: relative;
     overflow: hidden;
     display: flex;

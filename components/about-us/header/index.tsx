@@ -5,7 +5,7 @@ import logo from 'img/big-logo.webp'
 import {
     Section, Content, Title, Info, InfoContent,
     InfoDesc, InfoDescContent, InfoDescTitle, InfoText,
-    InfoTitle, Image
+    InfoTitle, Img
 } from './styled'
 
 const Header: NextPage = ()=>  (
@@ -30,9 +30,9 @@ const Header: NextPage = ()=>  (
                             </InfoDescContent>
                         </InfoDesc>
                     </InfoText>
-                    <Image>
+                    <Img>
                             <img src={logo.src} alt="about-header-img"/>
-                    </Image>
+                    </Img>
                 </InfoContent>
             </Info>
         </Content>

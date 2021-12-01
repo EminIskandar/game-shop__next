@@ -17,6 +17,7 @@ const Genres: NextPage  = ()=> {
 
     React.useEffect(() => {
         window.scrollTo(0, 0) 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     React.useEffect(() => {
@@ -28,6 +29,7 @@ const Genres: NextPage  = ()=> {
                 setData(AllData)
             } 
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [section])  
  
     
@@ -41,3 +43,4 @@ const Genres: NextPage  = ()=> {
 }
 
 export default Genres
+ 

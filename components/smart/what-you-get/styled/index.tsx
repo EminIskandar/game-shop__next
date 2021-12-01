@@ -41,7 +41,7 @@ export const Item = styled.div`
         width: 100%; 
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     width: 85px;
     display: flex;
     justify-content: center;

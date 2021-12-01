@@ -82,7 +82,7 @@ const Slider : NextPage  = ()=> {
                         </Title>
                         <Description>  
                             <TextItem> 
-                                <h2> Gamivo is the only digital website regostered and operated with European Union and it's law. We make sure to follow all official directives and instructuions that exist in UE jurisdiction</h2>
+                                <h2> Gamivo is the only digital website regostered and operated with European Union and it&apos;s law. We make sure to follow all official directives and instructuions that exist in UE jurisdiction</h2>
                             </TextItem>  
                             <TextImg>
                                 <img src={flag.src} alt=""/>

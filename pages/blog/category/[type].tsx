@@ -3,8 +3,9 @@ import { NextPage } from 'next'
 import Layout from 'layout/blog'
 import { useRouter } from 'next/router'
 import { BlogCategory } from 'components'
+import Index from 'components/how-it-work'
   
-const Blog: NextPage = ()=> {  
+const Category: NextPage = ()=> {  
     const router = useRouter()
     const { type } = router.query 
 
@@ -15,4 +16,5 @@ const Blog: NextPage = ()=> {
     )
 } 
 
-export default Blog;
+export default Category
+ 

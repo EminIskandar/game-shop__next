@@ -47,7 +47,7 @@ export const ItemContent = styled.div`
     height: 100%;
     overflow: hidden;
 `
-export const Image = styled.div`
+export const Img = styled.div`
     width: 100%;
     img{
         width: 100%;

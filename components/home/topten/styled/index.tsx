@@ -32,7 +32,7 @@ export const Items = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
 `
-export const Image = styled.div`
+export const Img = styled.div`
      display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +163,7 @@ export const Item = styled.a`
         }
     }
 
-    &:hover ${Image} img{
+    &:hover ${Img} img{
         filter: opacity(0.2);
         transform: scale(1.2) translateY(-50%);
     } 

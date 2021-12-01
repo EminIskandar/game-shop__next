@@ -7,7 +7,7 @@ import { Store } from 'interfaces/store'
 //style 
 import {
     Section, Content, Header, Items, Item, Info, 
-    Title, Numb, Price, Image 
+    Title, Numb, Price, Img 
 }from './styled'
  
 
@@ -27,11 +27,11 @@ const TopTen : NextPage = ()=> {
                     {
                         data.map((element , index )=>{
                             const image = require( `img/game/TopTen/${element.img}`)
-                            return  <Link href={element.path} key={index}>
+                            return  <Link href={element.path} key={index} passHref>
                                         <Item>
-                                            <Image>
+                                            <Img>
                                                 <img src={image.default.src} alt={`TopTen${index}`}/>
-                                            </Image>
+                                            </Img>
                                             <Info>
                                                 <Title>
                                                     <h4>{element.title}</h4>

@@ -36,7 +36,7 @@ export const Header = styled(Content)`
         display: none;
     }
 `
-export const Image = styled.div``
+export const Img = styled.div``
 
 export const Text = styled.div``
 

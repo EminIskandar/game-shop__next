@@ -6,7 +6,7 @@ import { Store } from 'interfaces/store'
 
 //style 
 import {
-    Section, Content, Header, Items, Item, Image, 
+    Section, Content, Header, Items, Item, Img, 
     Info, Title, Price, Coupon, BuyBtn 
 } from './styled'
 
@@ -25,12 +25,12 @@ const Discount : NextPage = ()=>  {
                     {
                         discount.map((item)=>{
                             const image = require(`img/game/${item.image}`)
-                            return <Link href="/product/far-cry-5-emea-ubisoft-connect-cd-key" key={item.name}>
+                            return <Link href="/product/far-cry-5-emea-ubisoft-connect-cd-key" key={item.name} passHref>
                                         <Item>
-                                            <Image>
+                                            <Img>
                                                 <img src={image.default.src} alt="far-cry"/>
                                                 <h4>{item.discountPercent}</h4>
-                                            </Image>
+                                            </Img>
                                             <Info>
                                                 <Title>
                                                     <h4>{item.name}</h4>

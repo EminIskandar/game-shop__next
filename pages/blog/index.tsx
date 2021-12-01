@@ -3,7 +3,7 @@ import { NextPage } from 'next'
 import Layout from 'layout/blog'
 import { BlogArticles, BlogNews } from 'components'
   
-const Blog: NextPage = ()=> {  
+const Index: NextPage = ()=> {  
 
    return ( 
         <Layout title={'GAMIVO Blog - Buy Games & Read About Games %' }>
@@ -13,4 +13,5 @@ const Blog: NextPage = ()=> {
     )
 } 
 
-export default Blog;
+export default Index
+ 

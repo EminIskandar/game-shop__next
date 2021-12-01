@@ -8,7 +8,7 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 //styled
 import {
     Section, Content, Title, Items, Item, Info, 
-    Image, Price, Coupon, Btn, LoadMore, LoadMoreBtn 
+    Img, Price, Coupon, Btn, LoadMore, LoadMoreBtn 
 } from './styled'
 
 const CurrentDiscount : NextPage = ()=> {
@@ -27,13 +27,13 @@ const CurrentDiscount : NextPage = ()=> {
                         data.map((product, index) => {    
                             const image = require(`img/game/current-discount/${product.image}`)
                             return   <Item key={index}>
-                                        <Image>
+                                        <Img>
                                             <img src={image.default.src} alt={`discount${index}`}/>
-                                        </Image>
+                                        </Img>
                                         <Info>
-                                            <Image>
+                                            <Img>
                                                 <h2> {product.name} </h2>
-                                            </Image>
+                                            </Img>
                                             <Price>
                                                 <p className="last-price">{`${product.price}$`}</p>
                                                 <p className="current-price">{`${product.discountPrice}$`}</p>

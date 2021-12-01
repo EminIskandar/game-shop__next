@@ -72,7 +72,7 @@ export const Article = styled.a`
         margin: 5px 0;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     overflow: hidden; 
     background-color: #1f1f1f;
 

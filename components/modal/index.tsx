@@ -13,6 +13,7 @@ const Modal = ( { children, selector }: ModalProps ) => {
     React.useEffect(() => {
         ref.current = document.getElementById(selector)
         setMounted(true)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]) 
 
     return mounted ? createPortal( children , ref.current ) : null

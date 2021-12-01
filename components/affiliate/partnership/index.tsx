@@ -6,16 +6,16 @@ import logo from 'img/partnership-logo.svg'
 
 //styled
 import { 
-    Section, Content, Image, Description, Text, 
+    Section, Content, Img, Description, Text, 
     Title
 } from './styled'
 
 const Partnership : NextPage =  () => (
         <Section data-testid="partnership">
             <Content>
-                <Image>
+                <Img>
                     <img src={logo.src} alt="partnership"/>
-                </Image>
+                </Img>
                 <Description>
                     <Title>
                         <h2>Become our partner by sending an application to: <span>partnership@gamivo.com</span></h2>

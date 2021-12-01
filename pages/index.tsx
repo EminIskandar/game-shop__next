@@ -1,6 +1,6 @@
 import { NextPage } from "next"  
 import Layout from 'layout/index'
-import {Slider, Recommendation, Discount, Discover, Subscription, Sections, TopTen, Blog } from 'components'
+import {Slider, Recommendation, Discount, Discover, Subscription, Sections, TopTen, Blog } from 'components' 
 
 const Index : NextPage = () => {
     return (

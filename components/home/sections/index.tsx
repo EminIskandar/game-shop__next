@@ -94,7 +94,7 @@ const Sections : NextPage = ()=>{
                                 Object.values(data).map( (product: any, index : number) => {  
                                     const image = require( `img/game/info/${product.coverImg}`) 
                                     if(index < 5 ){
-                                        return  <Link href={`/product/${product.path}`} key={index}>
+                                        return  <Link href={`/product/${product.path}`} key={index} passHref>
                                                     <MobileItem>
                                                         <MobileItemImg>
                                                             <img src={image.default} alt={product.name}/>

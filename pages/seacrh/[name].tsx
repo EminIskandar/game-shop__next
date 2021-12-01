@@ -17,6 +17,7 @@ const Search: NextPage  = ()=> {
 
     React.useEffect(() => {
         window.scrollTo(0, 0) 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     React.useEffect(() => {
@@ -30,6 +31,7 @@ const Search: NextPage  = ()=> {
                 } 
             } 
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [name])  
  
     

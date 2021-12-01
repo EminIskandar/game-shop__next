@@ -9,7 +9,7 @@ import img3 from 'img/blog/blog-big-img3.webp'
 
 //styled
 import {
-    Section, Content, Image, Info, Name,
+    Section, Content, Img, Info, Name,
     DateAndBtn, Date, Btn, Article, BottomArticle
 } from './styled'
 
@@ -17,11 +17,11 @@ import {
     return (
         <Section data-testid="blog-article">
             <Content>
-                <Link href="/blog/article/top-10-weirdest-tekken-characters">
+                <Link href="/blog/article/top-10-weirdest-tekken-characters" passHref>
                     <Article theme={'top'}>
-                        <Image>
+                        <Img>
                             <img src={img1.src} alt="article-1"/>
-                        </Image>
+                        </Img>
                         <Info>
                             <Name>
                                 <h2>TOP 10 WEIRDEST TEKKEN CHARACTERS</h2>
@@ -37,11 +37,11 @@ import {
                     </Article>
                 </Link> 
                 <BottomArticle>
-                    <Link href="/blog/article/top-10-weirdest-tekken-characters">
+                    <Link href="/blog/article/top-10-weirdest-tekken-characters" passHref>
                         <Article theme={'bottom'}  >
-                            <Image>
+                            <Img>
                                 <img src={img1.src} alt="article-2"/>
-                            </ Image>
+                            </ Img>
                             <Info> 
                                 <Date>
                                     <h3>General News Now Trending</h3>
@@ -53,11 +53,11 @@ import {
                             </Info>
                         </Article>
                     </Link> 
-                    <Link href="/blog/article/outriders-everything-you-need-to-know-about-the-game">
+                    <Link href="/blog/article/outriders-everything-you-need-to-know-about-the-game" passHref>
                         <Article theme={'bottom'}  >
-                            <Image>
+                            <Img>
                                 <img src={img2.src} alt="article-3"/>
-                            </Image>
+                            </Img>
                             <Info>  
                                 <Date>
                                     <h3>General News Now Trending</h3>
@@ -69,11 +69,11 @@ import {
                             </Info>
                         </Article>
                     </Link> 
-                    <Link href="/blog/article/mmo-games-worth-checking-out">
+                    <Link href="/blog/article/mmo-games-worth-checking-out" passHref>
                         <Article theme={'bottom'}  >
-                            <Image>
+                            <Img>
                                 <img src={img3.src} alt="article-4"/>
-                            </Image>
+                            </Img>
                             <Info>  
                                 <Date>
                                     <h3>General News Now Trending</h3>

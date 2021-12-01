@@ -11,18 +11,18 @@ import logo from 'img/logo.svg'
  
 //style 
 import { 
-    Footer, Content, Logo, Nav,NavGroup ,NavLink, 
+    Container, Content, Logo, Nav,NavGroup ,NavLink, 
     CopyrightAndSocial, Social,SocialItem
 } from './styled'
 
 
-const footer: NextPage = ()=> {
+const Footer: NextPage = ()=> {
 
     //redux
     const links  = useSelector((state : Store) => state.footerLinks) 
 
      return (
-        <Footer data-testid="footer">
+        <Container data-testid="footer">
             <Content>
                 <Logo>
                     <img src={logo.src} alt="footer-logo"/>
@@ -31,7 +31,7 @@ const footer: NextPage = ()=> {
                     <NavGroup>
                        {
                            links.map((link)=>{
-                                return  <Link href={link.path} key={link.name} >
+                                return  <Link href={link.path} key={link.name} passHref>
                                             <NavLink>{link.name}</NavLink>
                                         </Link> 
                            })
@@ -50,8 +50,8 @@ const footer: NextPage = ()=> {
                     </Social>
                 </CopyrightAndSocial>
             </Content>
-        </Footer>
+        </Container>
     )  
 }
 
-export default footer;
+export default Footer;

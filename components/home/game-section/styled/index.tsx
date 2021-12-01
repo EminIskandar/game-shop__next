@@ -38,7 +38,7 @@ export const Items = styled.div`
     position: absolute;
     height: 185px;
 `
-export const Image = styled.div`
+export const Img = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -144,7 +144,7 @@ export const Item = styled.a`
         margin:  0 3px 0 0 ;
     }
 
-    &:hover ${Image} img{
+    &:hover ${Img} img{
         filter: opacity(0.4);
         transform: scale(1.2);
     }

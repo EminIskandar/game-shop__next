@@ -21,7 +21,7 @@ export const Content = styled.div`
         flex-direction: column;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     position: relative; 
     transform: translateY(5px);
 

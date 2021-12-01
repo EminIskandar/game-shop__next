@@ -9,7 +9,7 @@ import database from 'db/db.json'
 //component
 import{ ProductIndex } from 'components'
 
-const Search: NextPage  = ()=> { 
+const Product: NextPage  = ()=> { 
 
     const router = useRouter()
     const { path } = router.query
@@ -17,6 +17,7 @@ const Search: NextPage  = ()=> {
 
     React.useEffect(() => {
         window.scrollTo(0, 0) 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     React.useEffect(() => {
@@ -28,6 +29,7 @@ const Search: NextPage  = ()=> {
                 setData(AllData)
             }  
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [path]) 
      
     
@@ -40,4 +42,5 @@ const Search: NextPage  = ()=> {
     )
 }
 
-export default Search
+ 
+export default Product

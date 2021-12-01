@@ -122,7 +122,7 @@ export const InfoDescContent = styled.div`
         display: block;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     width: 400px;
     display: flex;
     justify-content: center;

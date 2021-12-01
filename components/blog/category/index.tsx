@@ -8,7 +8,7 @@ import { Store } from 'interfaces/store'
 //styled
 import { 
     Main, Content, Title, Breadcumbs, BreadcumbsItem, BreadcumbsItems,
-    Articles, ArticleContent, Article, Image, Text, TextTitle, TextDate,
+    Articles, ArticleContent, Article, Img, Text, TextTitle, TextDate,
     TextDesc 
 } from './styled' 
   
@@ -68,11 +68,11 @@ const Category : NextPage<CategoryPageProps>  = ( {categoryName} ) => {
                          {
                              Object.values(articles[category]).map((article,index)=>{
                                  const image = require(`img/blog/${article.img}`)
-                                 return <Link href ={article.path} key={index}>
+                                 return <Link href ={article.path} key={index} passHref>
                                             <Article> 
-                                                <Image>
+                                                <Img>
                                                     <img src={image.default.src} alt={`${categoryName}-${index}`}/>
-                                                </Image>
+                                                </Img>
                                                 <Text>
                                                     <TextTitle>
                                                         <h4>{article.title}</h4>

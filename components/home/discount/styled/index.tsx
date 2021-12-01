@@ -73,7 +73,7 @@ export const Item = styled.a`
         margin: 5px;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     width: 185px;
     height: 245px;
     overflow: hidden;

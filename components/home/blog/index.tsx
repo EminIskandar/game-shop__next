@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 
 //style 
 import {
-    Section, Content, Header, Item,  Image, Text,
+    Section, Content, Header, Item, Img, Text,
     Title, Description, Date, Items
 }from './styled'
 
@@ -21,17 +21,19 @@ const Blog: NextPage = ()=>{
             <Content>
                 <Header>
                     <h2><span>Blog </span>Gamivo</h2>
-                    <a href="/"> Show all news </a>
+                    <Link href="/"> 
+                        <a>Show all news</a>
+                    </Link>
                 </Header>
                 <Items> 
                     {
                         article.map( (element , index )=> {
                             const image = require(`img/blog/${element.img}`)
-                            return <Link href={element.path} key={index}> 
+                            return <Link href={element.path} key={index} passHref> 
                                         <Item>
-                                            <Image>
+                                            <Img>
                                                 <img src={image.default.src} alt={`blogImage${index}`}/>
-                                            </Image>
+                                            </Img>
                                             <Text>
                                                 <Title>
                                                     <h2>{element.title}</h2>

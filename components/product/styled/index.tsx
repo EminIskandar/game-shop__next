@@ -74,7 +74,7 @@ export const OtherImage = styled.div`
     display: flex;
     justify-content: space-between;
 `
-export const Image = styled.div`
+export const Img = styled.div`
     width: calc(100% / 5 - 5px );
     position: relative;
     margin-top: 5px;

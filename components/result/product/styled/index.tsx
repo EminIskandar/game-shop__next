@@ -2,7 +2,7 @@ import styled from "styled-components";
 import  { css } from "styled-components"; 
 
 export const ImageAndName = styled.div``
-export const Image = styled.div``
+export const Img = styled.div``
 export const Name = styled.div``
 export const Platform = styled.div``
 export const Price = styled.div``
@@ -32,7 +32,7 @@ export const Product = styled.a`
                 height: 300px;
             }
 
-            & ${Image}{
+            & ${Img}{
                 width: 100%;
                 position: relative;
                 height: 120px; 
@@ -49,7 +49,7 @@ export const Product = styled.a`
                 }
 
             }
-            & ${Image} img {
+            & ${Img} img {
                 width: 100%;
             }
 
@@ -233,7 +233,7 @@ export const Product = styled.a`
 
             }
 
-            & ${Image}{
+            & ${Img}{
                 width: 170px;
                 height: 85px;
                 position: relative;
@@ -270,7 +270,7 @@ export const Product = styled.a`
                 }
             }
 
-            & ${Image} img {
+            & ${Img} img {
                 width: 100%;
 
                 @media (max-width:768px){

@@ -56,7 +56,7 @@ export const Item = styled.div`
         margin-bottom: 30px;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     position: relative;
     display: flex;
     justify-content: center;

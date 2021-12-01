@@ -6,7 +6,7 @@ import img1 from 'img/icon/gamivo-smart-hover.png'
 
 //style 
 import {
-    Section, Content, Header, Image, Text, PriceAndBtn,
+    Section, Content, Header, Img, Text, PriceAndBtn,
     Price,  Btn,
 } from './styled' 
 
@@ -14,9 +14,9 @@ const Subscription : NextPage = ()=> (
     <Section data-testid="Subscription">
         <Content>
             <Header>
-                <Image>
+                <Img>
                     <img src={img1.src} alt="sub-logo"/>
-                </Image>
+                </Img>
                 <Text>
                     <h3> <span>VIP Subscription</span> that guarentees lowest price! Why this is worth consdering? Check out all perks!</h3>
                 </Text>

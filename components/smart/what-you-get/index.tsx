@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { Store } from 'interfaces/store' 
 
 //styled
-import {Section,Content,Title,Items,Item,Image,Text} from './styled'
+import {Section,Content,Title,Items,Item,Img,Text} from './styled'
 
 const WhatYouGet: NextPage = () => { 
 
@@ -19,12 +19,12 @@ const WhatYouGet: NextPage = () => {
                 </Title>
                 <Items>
                     {
-                        data.map((item) => {
+                        data.map((item,index) => {
                             const image = require(`img/icon/${item.icon}`)
-                            return <Item>
-                                        <Image>
+                            return <Item key={index}>
+                                        <Img>
                                             <img src={image.default.src} alt="cpp"/>
-                                        </Image>
+                                        </Img>
                                         <Text>
                                             <h2 dangerouslySetInnerHTML={{__html: item.text}}></h2>
                                         </Text>

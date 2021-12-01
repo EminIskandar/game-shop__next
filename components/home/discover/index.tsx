@@ -2,6 +2,7 @@ import React from 'react'
 import { NextPage } from 'next'
 import { Store } from 'interfaces/store'
 import { useSelector } from 'react-redux'
+import Link from 'next/link'
  
 //style 
 import { Section, Content, Header, Items, Item }from './styled'
@@ -29,7 +30,9 @@ const Discover : NextPage = ()=> {
             <Content>
                 <Header> 
                     <h2 data-testid="header"><span>Discover </span>Gamivo</h2>
-                    <a href="/"> Discover all</a>
+                    <Link href="/"> 
+                        <a href="">Discover all</a>
+                    </Link>
                 </Header>
                 <Items>
                     {

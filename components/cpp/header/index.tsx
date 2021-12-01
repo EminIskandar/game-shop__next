@@ -5,14 +5,14 @@ import { NextPage } from 'next'
 import cpp from 'img/other/cpp01.webp'
 
 //styled
-import { Section, Content, Image, Description, Title, Text, TextItem } from './styled'
+import { Section, Content, Img, Description, Title, Text, TextItem } from './styled'
 
 const Header: NextPage   = () =>   (
         <Section data-testid="cpp-header">
             <Content>
-                <Image>
+                <Img>
                     <img src={cpp.src} alt="shield"/>
-                </Image>
+                </Img>
                 <Description>
                     <Title>
                         <h2>Customer Protection Program</h2>

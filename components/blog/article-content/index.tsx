@@ -7,18 +7,18 @@ import Postimg2 from 'img/blog/post_img2.jpg'
 
 //styled
 import {
-    Main, Section, Image, Description, Content, Header, Breadcrumbs,
+    Main, Section, Img, Description, Content, Header, Breadcrumbs,
     Title, DateAndCategory, Date, Category 
 } from './styled' 
 
 const ArticleContent: NextPage = () => ( 
         <Main data-testid="article-content">
             <Section>
-                <Image>
+                <Img>
                     <div>
                         <img src={img.src} alt="post-image1"/>
                     </div>
-                </Image>
+                </Img>
                 <Description>
                     <Content>
                         <Header >

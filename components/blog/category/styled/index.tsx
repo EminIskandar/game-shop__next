@@ -121,7 +121,7 @@ export const Article = styled.a`
         flex-direction: column;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
     width: 48.5%;
     overflow: hidden;
 

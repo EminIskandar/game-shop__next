@@ -4,7 +4,7 @@ import Layout from 'layout/blog'
 import { useRouter } from 'next/router'
 import { BlogArticleContent } from 'components'
   
-const Blog: NextPage = ()=> {  
+const Article: NextPage = ()=> {  
 
     const router = useRouter()
     const { name } = router.query
@@ -21,4 +21,6 @@ const Blog: NextPage = ()=> {
     )
 } 
 
-export default Blog;
+export default Article
+
+ 

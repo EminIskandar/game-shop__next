@@ -42,7 +42,7 @@ export const Content = styled.div`
         padding: 60px 0;
     }
 `
-export const Image = styled.div`
+export const Img = styled.div`
 
     width: 40%;
 

@@ -201,7 +201,7 @@ const Index: NextPage<ResultComponentProps> = ( {datas,header} ) => {
                                 <h3>{section?.toString().toUpperCase()}</h3>
                             </HeaderSection>
                             <HeaderDesc>
-                                <p>{ gameSectionDescription[section]}</p>
+                                <p>{    section === ''? gameSectionDescription[section] : null }</p>
                             </HeaderDesc>
                         </Header>:''
             }
