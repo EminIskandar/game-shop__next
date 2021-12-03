@@ -411,7 +411,7 @@ export const CartCount = styled.div`
     align-items: center;
     font-size: 14px;
     border-radius: 100%;
-    transform: translate(20px, -3px);
+    transform: translate(9px, -3px);
 `
 export const Icons = styled.div`
     display: none;
